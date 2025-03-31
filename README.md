@@ -26,3 +26,24 @@ npm install  # or yarn install
 
 # Run the development server
 npm start  # or yarn start
+```
+
+
+## 🚀 Deployment
+
+- Hosted on: [Live Website Link](https://yourwebsite.com)
+- Deployment via GitHub Actions
+
+## 🎯 Future Enhancements
+
+- Add a blog section
+- Improve animations and responsiveness
+- Enhance accessibility and SEO
+
+## 📬 Contact
+
+📧 Email: anushrithvic@gmail.com  
+
+
+---
+Made by Anush Rithvic Murugasamy
