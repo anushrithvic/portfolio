@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set, compatibility, and responsiveness -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Anush Rithvic - Computer Science Engineer | Software Developer | Innovator">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- External libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!-- Title and stylesheets -->
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <!-- Desktop navigation bar -->
+    <nav id="desktop-nav">
+      <div class="logo">Portfolio.</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Feats</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Mobile navigation (hamburger menu) -->
+    <nav id="hamburger-nav">
+      <div class="logo">Portfolio</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Feats</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero/Profile section -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pict.png"
+             alt="Anush Rithvic - profile picture"
+             class="profile-pic"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Anush Rithvic</h1>
+        <!-- Text that will be animated using Typed.js -->
+        <p class="section__text__p2"><span class="multiple-text"></span></p>
+        <!-- Call-to-action buttons -->
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Anush Resume.pdf', '_blank')"
+          >
+            Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <!-- Social media links -->
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/anush-rithvic-m-87a154307/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/anushrithvic'"
+          />
+          <img
+            src="./assets/instagram.png"
+            alt="My Instagram profile"
+            class="icon"
+            onclick="location.href='https://www.instagram.com/anush._.rithvic/'"
+          />
+          <img
+            src="./assets/email.png"
+            alt="My Mail"
+            class="icon"
+            onclick="location.href='mailto:anushrithvic@gmail.com'"
+          />
+        </div>
+      </div>
+    </section>
+
+
+    <!-- About section -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic-2.png"
+            alt="About picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <!-- Education information -->
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>I'm currently doing my <b> Bachelors of Technology </b>in <br /><b> Computer Science and Engineering </b><br />from <b>Amrita Vishwa Vidyapeetham </b>, Coimbatore</p>
+            </div>
+          </div>
+          <!-- Bio/introduction text -->
+          <div class="text-container">
+            <p>
+              A passionate <b>second-year computer science undergraduate</b> with a strong foundation in programming,
+              algorithms, and data structures. Proficient in <b>Python, C, and Java</b>, with hands-on experience in
+              developing projects and solving complex problems efficiently. A quick <b>learner, adaptable, and
+              innovative</b>, dedicated to refining technical skills and contributing to impactful solutions as
+              a software engineer.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills section: Programming Languages & Frameworks -->
+      <div class="details-container">
+            <h2 class="experience-sub-title">Programming Languages & Frameworks</h2>
+            <div class="skills-grid">
+              <!-- Using skillicons.dev to display skills icons -->
+              <img src="https://skillicons.dev/icons?i=c,cpp,py,java,js,html,css,mysql,flutter,flask,sqlite,haskell,django,tensorflow,pytorch,tkinter,pygame,numpy" alt="Programming Skills">
+            </div>
+      </div>
+      <br><br/>
+      <!-- Skills section: Tools -->
+      <div class="details-container">
+            <h2 class="experience-sub-title">Tools</h2>
+            <div class="skills-grid">
+              <!-- Using skillicons.dev to display tools icons -->
+              <img src="https://skillicons.dev/icons?i=git,github,linux,arduino,autocad,blender,visualstudio,vscode,pycharm,figma,eclipse,raspberrypi,anaconda,windows,apple,gmail,linkedin,stackoverflow,discord" alt="My Tools">
+            </div>
+      </div>
+
+      <!-- Navigation arrow to the next section -->
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+
+    <!-- Projects section -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- First project: Billify -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Billify</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/anushrithvic/Billify'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://drive.google.com/file/d/1zqeyvM0sKLB4F1wFEmkEDjeYeljgSOmW/view?usp=sharing'"
+              >
+                View
+              </button>
+            </div>
+          </div>
+          <!-- Second project: Smart Mirror  -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Smart Mirror</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/anushrithvic/Smart-Mirror'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <!-- Third project: Type to play -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Type to play</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/anushrithvic/Err0r4o4'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://anushrithvic.github.io/Err0r4o4/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation arrow to the next section -->
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <!-- Feats/Experience section -->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Feats</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- First feat: DevX event -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/experience.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title"> DevX: Code, Create, Conquer</h2>
+            <p>
+              Participated in DevX: Code, Create, Conquer, 3-hour WebDevelopment
+              Challenge organized by the Institution of Electronics and Telecommunication Engineers
+              (IETE) on 18th March 2025. The event aimed to ignite creativity and
+              coding skills through real-time web development tasks.<br />.
+
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://drive.google.com/file/d/1oS46mwrvY7CI-F9pSchvALY10YErOUIU/view?usp=sharing'"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+          <!-- Second feat:  -->
+
+          <!-- Third feat: -->
+
+        </div>
+      </div>
+      <!-- Navigation arrow to the next section -->
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+
+    <!-- Contact section -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <!-- Email contact -->
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:anushrithvic@gmail.com">Mail</a></p>
+        </div>
+        <!-- LinkedIn contact -->
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/anush-rithvic-m-87a154307/">LinkedIn</a></p>
+        </div>
+        <!-- GitHub contact -->
+        <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="GitHub icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://github.com/anushrithvic">GitHub</a></p>
+        </div>
+        <!-- Instagram contact -->
+        <div class="contact-info-container">
+          <img
+            src="./assets/instagram.png"
+            alt="Instagram icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.instagram.com/anush._.rithvic/">Instagram</a></p>
+        </div>
+      </div>
+
+      <div class="form-wrapper">
+        <form action="https://formspree.io/f/mnnpbryz" method="POST" class="contact-form">
+          <div class="field-row">
+            <input type="text" name="fullname" placeholder="Full Name" required>
+            <input type="email" name="emailaddress" placeholder="Email Address" required>
+          </div>
+          <div class="field-row">
+            <input type="tel" name="phonenumber" placeholder="Mobile Number" required>
+            <input type="text" name="emailsubject" placeholder="Email Subject" required>
+          </div>
+          <textarea name="messagecontent" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Success Message Popup -->
+      <div id="success-popup" class="popup">
+        <p>Message sent successfully! ✅</p>
+      </div>
+
+    </section>
+    <!-- Footer with n  avigation and copyright -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>&#169;Anush Rithvic Murugasamy .</p>
+    </footer>
+    <!-- JavaScript file for functionality -->
+    <script src="script.js"></script>
+  </body>
+</html>
