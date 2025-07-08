@@ -21,11 +21,6 @@ Welcome to my personal portfolio! This website showcases my projects, skills, an
 git clone https://github.com/your-username/your-portfolio.git
 cd your-portfolio
 
-# Install dependencies
-npm install  # or yarn install
-
-# Run the development server
-npm start  # or yarn start
 ```
 
 
